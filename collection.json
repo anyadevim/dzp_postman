@@ -1,1685 +1,3232 @@
 {
-   "info":{
-      "_postman_id":"f7ab74c5-37ac-465c-9fa0-95033a0afeb0",
-      "name":"dzp_rpc",
-      "schema":"https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-   },
-   "item":[
-      {
-         "name":"Client",
-         "item":[
-            {
-               "name":"client.getProfile",
-               "id":"89bb1666-acec-423b-bff6-b32af7554003",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 12,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getProfile\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"client.getCurrentLoan",
-               "id":"c6e1c25c-9cef-4e9e-9b69-ca6bc719c2aa",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 12,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getCurrentLoan\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"client.getCreditCards",
-               "id":"f0648218-2256-453d-a1fc-1a556579692d",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 18,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getCreditCards\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"client.getEvents",
-               "id":"6b8685dd-952f-47c9-b205-ab86a5e4541c",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 8,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getEvents\",\n    \"params\": {\n        \"type\": 1,\n        \"page\": 0\n    }\n}"
-                  },
-                  "url":"https://dozarplati-test-api.devim.team/rpc"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"client.getDashboardInfo",
-               "id":"52a13ce5-f35c-41a1-aab8-30490bdfd217",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getDashboardInfo\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"9168e87e-3ca8-4288-ac57-264b290172f2",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"client.prepareBindingCreditCard",
-               "id":"b0040ec2-ebd8-4c1f-8875-d0947d2c76fa",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     },
-                     {
-                        "key":"XDEBUG_SESSION_START",
-                        "value":"PHPSTORM",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":""
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"13df380b-7300-481f-b1c8-57e032c88843"
-      },
-      {
-         "name":"Auth",
-         "item":[
-            {
-               "name":"New",
-               "item":[
-                  {
-                     "name":"auth.newLogin",
-                     "event":[
-                        {
-                           "listen":"test",
-                           "script":{
-                              "type":"text/javascript",
-                              "exec":[
-                                 "pm.environment.set(\"bearer_token\", pm.response.json().result.token);"
-                              ]
-                           }
-                        }
-                     ],
-                     "id":"76222202-e2b6-446b-870e-270a32a609ca",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\":3,\n    \"jsonrpc\":\"2.0\",\n    \"method\":\"auth.newLogin\",\n    \"params\":{\n        \"password\":\"1234\",\n        \"phone\":\"79901111180\"\n    }\n}"
-                        },
-                        "url":"http://dzp.localhost/rpc"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"preApprovedLoan.create",
-                     "event":[
-                        {
-                           "listen":"test",
-                           "script":{
-                              "type":"text/javascript",
-                              "exec":[
-                                 "pm.environment.set(\"bearer_token\", pm.response.json().result.token);"
-                              ]
-                           }
-                        }
-                     ],
-                     "id":"85e591cf-97a5-41eb-972d-ee25558ed924",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.newLogin\",\n    \"params\": {\n        \"phone\": \"79911111123\",\n        \"password\": \"1234\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"auth.setUserPassword",
-                     "id":"31f4a668-70c1-41d0-a597-19e8753e19a5",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.setUserPassword\",\n    \"params\": {\n        \"phone\": \"79110000000\",\n        \"password\": \"1111\",\n        \"passwordConfirmation\": \"1111\",\n        \"confirmationCode\": \"1234\",\n        \"passport\": \"9110000001\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"auth.registerUser",
-                     "id":"1a22d19f-ed3e-4add-9ee6-5779a87b90ff",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.registerUser\",\n    \"params\": {\n        \"phone\": \"79675736020\",\n        \"password\": \"1234567890abcde\",\n        \"passwordConfirmation\": \"1234567890abcde\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"auth.getUserState",
-                     "id":"0a8e4ee8-024e-4c93-ba6c-d28d0004f7fc",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.getUserState\",\n    \"params\": {\n        \"phone\": \"79110000000\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"auth.sendConfirmationSms",
-                     "id":"301c033a-59f1-4fc2-be15-39f3bb65c32a",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.sendConfirmationSms\",\n    \"params\": {\n        \"phone\": \"79110000002\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  },
-                  {
-                     "name":"auth.validatePassport",
-                     "id":"c928d794-ad94-4edb-9f29-44e850c0a67c",
-                     "request":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "type":"text",
-                              "value":"application/json"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.validatePassport\",\n    \"params\": {\n        \"phone\": \"79110000001\",\n        \"passport\": \"9110000000\"\n    }\n}"
-                        },
-                        "url":"{{rpcUrl}}"
-                     },
-                     "response":[
-                        
-                     ]
-                  }
-               ],
-               "id":"774ffac6-c9b3-446e-96c6-69518478e412"
-            }
-         ],
-         "id":"3d39e803-78d0-4ca3-936d-93bf145fb822"
-      },
-      {
-         "name":"Proxy",
-         "item":[
-            {
-               "name":"application.fillStep1",
-               "id":"e5d8c98b-9333-40d7-b953-c8d622943cdf",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":""
-                  },
-                  "url":"http://localhost:8089/rpc"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"proxy.checkRetireeLoan",
-               "id":"64f3189a-2814-4db4-bcef-b5a97ffe8f70",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":""
-                  },
-                  "url":"http://localhost:8089/rpc"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"proxy.login",
-               "event":[
-                  {
-                     "listen":"test",
-                     "script":{
-                        "type":"text/javascript",
-                        "exec":[
-                           "pm.environment.set(\"proxy_hash\", pm.response.json().result.hash);"
-                        ]
-                     }
-                  }
-               ],
-               "id":"4e38266e-2e68-4778-a550-df58936b4999",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\r\n    \"id\": 5,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"proxy.login\",\r\n    \"params\": {\r\n        \"login\": \"site\",\r\n        \"password\": \"site\"\r\n    }\r\n}"
-                  },
-                  "url":"http://localhost:8089/rpc"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"proxy.checkHash",
-               "event":[
-                  {
-                     "listen":"test",
-                     "script":{
-                        "id":"454741c0-ee9c-4806-b463-1a4953ad8db7",
-                        "exec":[
-                           ""
-                        ],
-                        "type":"text/javascript"
-                     }
-                  }
-               ],
-               "id":"b0113400-47ce-42eb-ad98-f8423af88920",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\r\n    \"id\": 6,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"proxy.checkHash\",\r\n    \"params\": {\r\n        \"hash\": \"{{proxy_hash}}\",\r\n        \"officeId\": \"0274\"\r\n    }\r\n}"
-                  },
-                  "url":"http://localhost:8089/rpc"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"proxy.createLoan",
-               "event":[
-                  {
-                     "listen":"test",
-                     "script":{
-                        "id":"df7371c2-d1f3-4ce2-90a8-c8e7677f13c6",
-                        "exec":[
-                           ""
-                        ],
-                        "type":"text/javascript"
-                     }
-                  }
-               ],
-               "id":"23a4817f-476a-4a51-a4e9-bfea272b0a4a",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\r\n    \"hash\": \"2MdWtPYD1EjhR\",\r\n    \"officeId\": \"0329\",\r\n    \"personalInfo\": {\r\n        \"firstName\": \"Наталья\",\r\n        \"lastName\": \"Зверева\",\r\n        \"patronymic\": \"Сергеевна\",\r\n        \"mobilePhone\": \"79125946898\",\r\n        \"email\": \"nz608@gmail.com\",\r\n        \"previousFullName\": \"Раговина Наталья Сергеевна\",\r\n        \"gender\": 2,\r\n        \"maritalStatus\": 4,\r\n        \"birthDate\": \"16.02.1986\",\r\n        \"phone\": \"79223761837\",\r\n        \"photo\": null,\r\n        \"hasRealty\": true,\r\n        \"hasCar\": false,\r\n        \"source\": 43,\r\n        \"parentsInfo\": \"с родителями\",\r\n        \"minors\": \"двое проживают вместе\",\r\n        \"comment\": null,\r\n        \"refusalRecommended\": false,\r\n        \"passport\": {\r\n            \"issueDate\": \"17.03.2010\",\r\n            \"subCode\": \"590-033\",\r\n            \"registrationDate\": \"02.10.2017\",\r\n            \"scanFile\": null,\r\n            \"placeOfBirth\": \"Гор. Кунгур Пермской Обл.\",\r\n            \"issueAuthority\": \"Отделом УФМС России по Пермскому краю в городе Кунгуре и Кунгурском районе\",\r\n            \"series\": \"5709\",\r\n            \"number\": \"545699\"\r\n        }\r\n    },\r\n    \"addressRegistration\": {\r\n        \"country\": \"Россия\",\r\n        \"region\": null,\r\n        \"city\": \"Кунгур\",\r\n        \"street\": \"Воровского\",\r\n        \"house\": \"93\",\r\n        \"flat\": \"3\",\r\n        \"postIndex\": null\r\n    },\r\n    \"addressResidential\": {\r\n        \"country\": \"Россия\",\r\n        \"region\": null,\r\n        \"city\": \"Кунгур\",\r\n        \"street\": \"Воровского\",\r\n        \"house\": \"93\",\r\n        \"flat\": \"3\",\r\n        \"postIndex\": null\r\n    },\r\n    \"employment\": {\r\n        \"isRetired\": false,\r\n        \"employer\": \"ООО \\\" почта россии\\\"\",\r\n        \"employerAddress\": \"кунгур ул. красная д. 15\",\r\n        \"occupation\": \"почтальон  3го класса\",\r\n        \"salaryOfficial\": 2,\r\n        \"workPhone\": \"73427124717\",\r\n        \"salaryDate\": \"10 и 25\",\r\n        \"dateStart\": \"04.2020\"\r\n    },\r\n    \"contacts\": [\r\n        {\r\n            \"fullName\": \"Рагозина Зоя Михайловна\",\r\n            \"mobilePhone\": \"79024714371\",\r\n            \"relation\": 2,\r\n            \"relationText\": \"Близкий родственник\"\r\n        }\r\n    ],\r\n    \"loanInfo\": {\r\n        \"promoCode\": null,\r\n        \"purpose\": \"оплата садика\",\r\n        \"amount\": 2000,\r\n        \"period\": 9,\r\n        \"previousLoans\": []\r\n    },\r\n    \"type\": 0\r\n}"
-                  },
-                  "url":"http://localhost:8089/rpc"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"aec8dbce-8351-4f85-ba12-26b16246535e"
-      },
-      {
-         "name":"PromoCode",
-         "item":[
-            {
-               "name":"promoCode.getInfo",
-               "id":"28364548-3fef-4f42-9eaa-ed72c45cda50",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\r\n    \"id\": 2,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"promoCode.getInfo\",\r\n    \"params\": {\r\n        \"promoCode\": \"first\"\r\n    }\r\n}"
-                  },
-                  "url":"{{rpcUrl}}",
-                  "description":"Провека промокода"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"320c802a-ae17-44b1-ba91-fcfbfc381947"
-      },
-      {
-         "name":"Admin",
-         "item":[
-            {
-               "name":"Restructuring.getClientInfo",
-               "id":"d35d2cc6-c693-4b59-a7c6-4411438d5890",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"restructuring.getClientInfo\",\n    \"params\": {\n        \"passportSeries\": \"4745\",\n        \"passportNumber\": \"345234\"\n    }\n}",
-                     "options":{
-                        "raw":{
-                           "language":"json"
-                        }
-                     }
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"Restructuring.allowedRestructuring",
-               "id":"764883b8-51d5-46e9-b97f-b17fbc4f304f",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":""
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"Restructuring.startHoliday",
-               "id":"c2af4953-2078-427c-8fbf-867c7bf5f2e9",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"restructuring.startHoliday\",\n    \"params\": {\n        \"loanId\": \"600\",\n        \"startDate\": \"0.0.0\",\n        \"endDate\": \"26.04.2020\"\n    }\n}",
-                     "options":{
-                        "raw":{
-                           "language":"json"
-                        }
-                     }
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"support.getLoansByPhone",
-               "id":"da435502-9a58-4c78-834c-a031bc615e2d",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"support.getLoansByPhone\",\n    \"params\": {\n        \"phone\": \"79333330376\"\n    }\n}",
-                     "options":{
-                        "raw":{
-                           "language":"json"
-                        }
-                     }
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"support.getLoanByNumDoc",
-               "id":"9eff46a7-f4d1-473c-95c8-695c90681596",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"support.getLoansByPhone\",\n    \"params\": {\n        \"phone\": \"79333330376\"\n    }\n}",
-                     "options":{
-                        "raw":{
-                           "language":"json"
-                        }
-                     }
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"limits.clear",
-               "id":"150e2a9d-ad96-401a-8254-d3260f25ae9e",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n\t\"id\": 1,\n\t\"jsonrpc\": \"2.0\",\n\t\"method\": \"limits.clear\",\n\t\"params\": {\n\t\t\"phone\": \"79149337940\",\n\t\t\"limits\": \"[\\\"mobile_auth_send_confirmation_sms\\\",\\\"mobile_auth_sms_code_validation\\\",\\\"rpc_auth_passport_validation\\\",\\\"rpc_auth_password_validation\\\",\\\"rpc_auth_send_confirmation_sms\\\",\\\"rpc_auth_sms_code_validation\\\",\\\"rpc_brokerage_send_confirmation_sms\\\",\\\"rpc_brokerage_sms_code_validation\\\",\\\"rpc_loan_send_confirmation_sms\\\",\\\"rpc_loan_sms_code_validation\\\",\\\"rpc_paid_send_confirmation_sms\\\",\\\"rpc_paid_sms_code_validation\\\",\\\"service_credit_rating_offer_send_confirmation_sms\\\",\\\"service_credit_rating_offer_sms_code_validation\\\",\\\"service_sign_loan_send_confirmation_sms\\\",\\\"service_sign_loan_sms_code_validation\\\",\\\"service_sign_restructuring_send_confirmation_sms\\\",\\\"service_sign_restructuring_sms_code_validation\\\"]\"\n\t}\n}",
-                     "options":{
-                        "raw":{
-                           "language":"json"
-                        }
-                     }
-                  },
-                  "url":"{{rpcAdminUrl}}"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"57573cfb-5578-4425-be7b-74eeb75abdbd"
-      },
-      {
-         "name":"CreditHoliday",
-         "item":[
-            {
-               "name":"start",
-               "id":"0690c3cc-9603-4d24-bb65-e0fe4de519d7",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"creditHoliday.start\",\n    \"params\": {\n\t\t\"period\": 30\n    }\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"cancel",
-               "id":"71fafa8a-0cfc-4351-8455-d8af81589b79",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"creditHoliday.cancel\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"getCalculationParams",
-               "id":"f0babe39-9867-4b98-ace8-ee68da888b5f",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"creditHoliday.getCalculationParams\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"16521898-426d-4fca-8fb6-f84126983fa4"
-      },
-      {
-         "name":"Loan",
-         "item":[
-            {
-               "name":"loan.getDocuments",
-               "id":"cc505719-dfb0-417f-a0e4-5941509622cc",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getDocuments\",\n    \"params\": {\n    \t\"id\": 20060 \n    }\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"loan.getLoanOrder",
-               "id":"28e231e9-104a-4977-9711-6ac553b716a5",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getLoanOrder\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"0e2443da-9b46-4dd8-ab40-40c7800d3a4a",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"loan.getSelectedLoan",
-               "id":"f67f815e-01ac-4d0c-9ca8-9639343f84ff",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getSelectedLoan\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"91264d4f-2d9e-43dc-b7e6-4024a02057c3",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"loan.sendConfirmationCode",
-               "id":"91d9e262-989e-41f4-9a15-5b11996b1037",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.sendConfirmationCode\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"ef631762-a26f-421d-b9cd-c0b5423ccd59",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"loan.sign",
-               "id":"709d8542-8cb5-47fc-8c1c-b7175b746e88",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 6,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.sign\",\n    \"params\": {\n        \"confirmationCode\": \"1234\"\n    }\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"45c3c5a2-5a1a-40be-af89-63be8aa15d5b",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"getAgreements",
-               "id":"983c05a9-9acd-463a-ac3b-81c4c36ae310",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getAgreements\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"loan.create",
-               "id":"a4d435c2-7b62-41f4-85c3-676715f4b5bf",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getLoanOrder\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"0280251d-9ac1-463c-9579-0f3acae7fe97",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            }
-         ],
-         "id":"9d950619-25d7-46de-a654-8fc0b46e45a9"
-      },
-      {
-         "name":"Document",
-         "item":[
-            {
-               "name":"document.getRestructureConditions",
-               "id":"6d32296b-5906-457c-a7d7-ffbd36c554ae",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"document.getRestructureConditions\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"10d9fa3b-cff8-4a9e-9ec7-f76cde5420e4"
-      },
-      {
-         "name":"Application",
-         "item":[
-            {
-               "name":"application.fillStep1",
-               "id":"ccfb4ee6-7972-4d97-9ae6-248047e95250",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep1\",\n    \"params\": {\n        \"photo\": \"\",\n        \"lastName\": \"фывафыав\",\n        \"firstName\": \"ывафыва\",\n        \"patronymic\": \"ывафыва\",\n        \"email\": \"asdfaf@sadfaf.ru\",\n        \"passportScan\": \"data:image/jpeg;base64,/9j/4AAQ\",\n        \"issueDate\": \"10.10.2019\",\n        \"placeOfBirth\": \"санкт петербург\",\n        \"esiaLock\": false,\n        \"birthDate\": \"10.10.2000\",\n        \"issueAuthority\": \"лргпнгпгонр\",\n        \"gender\": 0,\n        \"passport\": \"4569813216\",\n        \"subCode\": \"111222\",\n        \"promoCode\": \"\"\n    }\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"application.getStepsData",
-               "id":"70f0e35e-dcfc-46ab-af0e-57bc9864b31d",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "value":"application/json",
-                        "type":"text"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.getStepsData\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            },
-            {
-               "name":"application.getDocument",
-               "id":"322530c8-a749-4472-908d-a0bf6c33c58c",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.getDocumentUrl\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  
-               ]
-            }
-         ],
-         "id":"0e209d27-5362-4d7d-a83c-ffafe9a9c75f"
-      },
-      {
-         "name":"subscription",
-         "item":[
-            {
-               "name":"getActiveList",
-               "id":"fe46b117-1ef6-458d-9974-e08b204b6f32",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getActiveList\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"3819ac7d-d73e-4e51-8cb8-016693fe7f31",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            },
-            {
-               "name":"getAvailableList",
-               "id":"f2fc39bc-4352-420e-a6d6-649a5d647a1d",
-               "request":{
-                  "method":"POST",
-                  "header":[
-                     {
-                        "key":"Content-Type",
-                        "name":"Content-Type",
-                        "type":"text",
-                        "value":"application/json"
-                     }
-                  ],
-                  "body":{
-                     "mode":"raw",
-                     "raw":"{\n    \"id\": 11,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getAvailableList\"\n}"
-                  },
-                  "url":"{{rpcUrl}}"
-               },
-               "response":[
-                  {
-                     "id":"2687f7fd-b501-45a4-8fce-a148d2b057a7",
-                     "name":"https://localhost/rpc",
-                     "originalRequest":{
-                        "method":"POST",
-                        "header":[
-                           {
-                              "key":"Content-Type",
-                              "name":"Content-Type",
-                              "value":"application/json",
-                              "type":"text"
-                           }
-                        ],
-                        "body":{
-                           "mode":"raw",
-                           "raw":"{\"id\":11,\"jsonrpc\":\"2.0\",\"method\":\"client.getDashboardInfo\"}"
-                        },
-                        "url":"https://dozarplati-test-api.devim.team/rpc"
-                     },
-                     "status":"OK",
-                     "code":200,
-                     "_postman_previewlanguage":"json",
-                     "header":[
-                        {
-                           "key":"Server",
-                           "value":"nginx"
-                        },
-                        {
-                           "key":"Content-Type",
-                           "value":"application/json"
-                        },
-                        {
-                           "key":"Transfer-Encoding",
-                           "value":"chunked"
-                        },
-                        {
-                           "key":"Connection",
-                           "value":"keep-alive"
-                        },
-                        {
-                           "key":"Cache-Control",
-                           "value":"no-cache, private"
-                        },
-                        {
-                           "key":"Date",
-                           "value":"Thu, 28 Nov 2019 15:21:51 GMT"
-                        },
-                        {
-                           "key":"Content-Encoding",
-                           "value":"gzip"
-                        }
-                     ],
-                     "cookie":[
-                        
-                     ],
-                     "body":"{\n    \"jsonrpc\": \"2.0\",\n    \"result\": {\n        \"id\": 5963,\n        \"type\": 3,\n        \"loanType\": 11,\n        \"name\": \"Кредит доверия 2.0\",\n        \"identificationStatus\": 3,\n        \"showProlongationButton\": false,\n        \"amount\": 138345,\n        \"period\": 174,\n        \"periodClaimed\": 8,\n        \"creationDate\": \"2019-11-14T18:01:51+03:00\",\n        \"agreementNumber\": \"5-70983\",\n        \"status\": 4,\n        \"issueDate\": \"2019-11-14T18:03:24+03:00\",\n        \"showRecalculationButton\": false,\n        \"showPayoutButton\": true,\n        \"preOrders\": [],\n        \"isTransactionInProgress\": false,\n        \"claimAmount\": 200000,\n        \"isWorkingHours\": \"\",\n        \"underwritingDeadline\": \"2019-11-14T18:01:51+03:00\",\n        \"dueToDate\": \"2020-05-03T00:00:00+03:00\",\n        \"recalculateAmount\": 75230,\n        \"isExpired\": false,\n        \"expiredAmount\": 0,\n        \"lastExpiredAmount\": 0,\n        \"expiredDate\": \"\",\n        \"servicePrice\": 55338,\n        \"minimalPayment\": 7980,\n        \"monthlyPayment\": 7980,\n        \"paymentDate\": \"2020-02-03T00:00:00+03:00\",\n        \"paymentsCount\": 13,\n        \"interestRate\": \"0.00\",\n        \"changedLoanTerms\": 2,\n        \"closeLoanAmount\": 152030,\n        \"activeDays\": 14,\n        \"freeDays\": 7,\n        \"koronaTransfers\": [],\n        \"contactTransfers\": [],\n        \"dzpTransfers\": [],\n        \"amountLeft\": 138345,\n        \"bonusPromoCode\": null,\n        \"documentList\": [\n            {\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"type\": 1,\n                \"url\": \"http://dzp-test.devim.team/orders/da00cfd7ad5628beeaef9a0a625be21ac9f6d700.html\"\n            },\n            {\n                \"type\": 3,\n                \"createdat\": \"2019-11-14 18:06:00\",\n                \"url\": \"http://dzp-test.devim.team/orders/1aa4efdfb3819a7377f6dc1baa820a312b3f5cc9.html\"\n            },\n            {\n                \"type\": 9,\n                \"createdat\": {\n                    \"date\": \"2019-11-14 18:06:00.000000\",\n                    \"timezone_type\": 3,\n                    \"timezone\": \"Europe/Moscow\"\n                },\n                \"url\": \"http://dzp-test.devim.team/orders/fad40945f87ac09bce64400bd8e755795ddcd8e4.html\"\n            }\n        ],\n        \"editable\": false\n    },\n    \"id\": 11\n}"
-                  }
-               ]
-            }
-         ],
-         "id":"99c8625f-15df-43a8-821d-9ce71ba5ab81"
-      },
-      {
-         "name":"system.runCommand",
-         "id":"6a8ae10b-8e47-4af3-baf1-f7e31e1e2d07",
-         "request":{
-            "method":"POST",
-            "header":[
-               {
-                  "key":"Content-Type",
-                  "name":"Content-Type",
-                  "value":"application/json",
-                  "type":"text"
-               }
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"system.runCommand\",\n    \"params\": {\n        \"commandName\": \"update-discounts\"\n    }\n}"
-            },
-            "url":"{{rpcUrl}}"
-         },
-         "response":[
-            
-         ]
-      },
-      {
-         "name":"acceptance.preparePayment",
-         "id":"cc4719dc-bf3e-4b68-85c5-425d0ae60236",
-         "request":{
-            "method":"POST",
-            "header":[
-               {
-                  "key":"Content-Type",
-                  "name":"Content-Type",
-                  "value":"application/json",
-                  "type":"text"
-               }
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\n    \"id\": 10,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.preparePayment\",\n    \"params\": {\n        \"amount\": 1180000,\n        \"loanId\": 6101,\n        \"extended\": true\n    }\n}"
-            },
-            "url":"http://localhost:8089/rpc",
-            "description":"создает транзакцию на пополнение"
-         },
-         "response":[
-            
-         ]
-      },
-      {
-         "name":"acceptance.preparePayment Copy",
-         "id":"0fdbb659-67f5-4175-a904-e90ec9119f4c",
-         "request":{
-            "method":"POST",
-            "header":[
-               {
-                  "key":"Content-Type",
-                  "name":"Content-Type",
-                  "value":"application/json",
-                  "type":"text"
-               }
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.getAmountLeft\",\n    \"params\": {\n\t\t\"docNumber\": \"17-8692\",\n\t\t\"birthDate\": \"05.05.1960\"\n    }\n}"
-            },
-            "url":"http://localhost:8089/rpc",
-            "description":"создает транзакцию на пополнение"
-         },
-         "response":[
-            
-         ]
-      },
-      {
-         "name":"preOrder.getAll",
-         "id":"b32be30d-e95a-4cd5-b63f-6027089976a5",
-         "request":{
-            "method":"POST",
-            "header":[
-               {
-                  "key":"Content-Type",
-                  "name":"Content-Type",
-                  "value":"application/json",
-                  "type":"text"
-               },
-               {
-                  "key":"authorization",
-                  "value":"Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjE0MjcsInVzZXJJZCI6NjM1MCwicm9sZXMiOltdLCJzYWx0IjoiMC4wMzg3MDcwMCAxNTc1NTM1Mzk2NzEyNTUifQ.NcKuJp4eErJ4rZO1jAZiuGA8uNdAysvhF6eAwi4AwGo",
-                  "type":"text"
-               }
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\n    \"id\": 8,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getEvents\",\n    \"params\": {\n        \"type\": 1,\n        \"page\": 0\n    }\n}"
-            },
-            "url":"https://dozarplati-test-api.devim.team/rpc"
-         },
-         "response":[
-            
-         ]
-      },
-      {
-         "name":"company.getNext",
-         "event":[
-            {
-               "listen":"test",
-               "script":{
-                  "type":"text/javascript",
-                  "exec":[
-                     "pm.environment.set(\"bearer_token\", pm.response.json().result.token);"
-                  ]
-               }
-            }
-         ],
-         "id":"6bf0dd4e-5ff9-4b22-b32d-0333b05c93f1",
-         "request":{
-            "method":"POST",
-            "header":[
-               {
-                  "key":"Content-Type",
-                  "name":"Content-Type",
-                  "type":"text",
-                  "value":"application/json"
-               }
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\n    \"id\":3,\n    \"jsonrpc\":\"2.0\",\n    \"method\":\"company.getNext\"\n}"
-            },
-            "url":"http://dzp.localhost/rpc"
-         },
-         "response":[
-            
-         ]
-      }
-   ],
-   "auth":{
-      "type":"bearer",
-      "bearer":{
-         "token":"{{bearer_token}}"
-      }
-   },
-   "event":[
-      {
-         "listen":"prerequest",
-         "script":{
-            "id":"c8c9006f-504d-40f7-ad1b-2c45cc45d258",
-            "type":"text/javascript",
-            "exec":[
-               ""
-            ]
-         }
-      },
-      {
-         "listen":"test",
-         "script":{
-            "id":"13b70818-84c4-4c6c-a821-7c9d6373c1e4",
-            "type":"text/javascript",
-            "exec":[
-               ""
-            ]
-         }
-      }
-   ]
+	"info": {
+		"_postman_id": "4a07aa04-80b1-48c4-8820-eeb889b00015",
+		"name": "DZP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15654555"
+	},
+	"item": [
+		{
+			"name": "Acceptance",
+			"item": [
+				{
+					"name": "getCurrentPaymentProvider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.getCurrentPaymentProvider\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAmountLeft",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"loanId\", pm.response.json().result.loanId);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.getAmountLeft\",\n    \"params\": {\n    \"birthDate\": \"{{birthDate}}\",\n    \"docNumber\": \"{{docNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "preparePayment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.preparePayment\",\n    \"params\": {\n        \"loanId\": {{loanId}},\n        \"amount\": 1920000,\n        \"extended\": \"true\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPaymentInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.getPaymentInfo\",\n    \"params\": {\n        \"loanId\": {{loanId}},\n        \"serviceType\": 1,\n        \"email\": \"kfc@chicken.ru\",\n        \"mobilePhone\": \"{{phoneNumber}}\",\n        \"paymentMethod\": \"bank_card\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requestPhoneConfirmation",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.requestPhoneConfirmation\",\n    \"params\": {\n        \"phoneNumber\": \"{{phoneNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkMobilePhone",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"docNumber\", pm.response.json().result.number);\r",
+									"pm.environment.set(\"birthDate\", pm.response.json().result.birthDate);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.checkMobilePhone\",\n    \"params\": {\n        \"phoneNumber\": \"{{phoneNumber}}\",\n        \"smsCode\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "prepareProlongation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"acceptance.prepareProlongation\",\n    \"params\": {\n        \"loanId\": {{loanId}},\n        \"period\": 30\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Application",
+			"item": [
+				{
+					"name": "getApplicationSteps",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep1\",\n    \"params\": {\n        \"photo\": \"string\",\n        \"lastName\": \"Алиев\",\n        \"firstName\": \"Бабаджон\",\n        \"patronymic\": \"Сергеевич\",\n        \"birthDate\": \"03.01.1985\",\n        \"gender\": 2,\n        \"email\": \"kfc@chicken.ru\",\n        \"passportScan\": \"\",\n        \"passport\": \"7465580869\",\n        \"subCode\": \"780040\",\n        \"issueDate\": \"11.11.2020\",\n        \"issueAuthority\": \"11.11.2020\",\n        \"placeOfBirth\": \"city\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep2\",\n    \"params\": {\n        \"maritalStatus\": 1,\n        \"familyCount\": 2,\n     \"addressRegistration\": {\"locality\": \"г Астрахань\", \"street\": \"ул Павелецкая\", \"house\": \"4\", \"flat\": \"244\"},\n    \"addressRegistrationDadata\": {},\n        \"contactPersons\": \"\",\n        \"social\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep3\",\n    \"params\": {\n        \"noWork\": \"false\",\n        \"employer\": \"ООО \\\"АВТОТИБЕТ\\\"\",\n        \"employerPhone\": \"79870009698\",\n        \"position\": \"Зам\",\n        \"experience\": 2,\n        \"salaryOfficial\": 3,\n        \"salaryDate\": 1,\n        \"agreements\": 1\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getApplicationStepsB",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.getApplicationStepsB\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep1b",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep1b\",\n    \"params\": {\n    \"birthDate\": \"03.01.2000\",\n    \"email\": \"jnk@efef.efe\",\n    \"esiaLock\": false,\n    \"firstName\": \"Вп\",\n    \"gender\": 0,\n    \"lastName\": \"Щщщ\",\n    \"patronymic\": \"Вапва\",\n    \"photo\": \"\",\n    \"promoCode\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep2b",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep2b\",\n    \"params\": {\n    \"creditLoad\": 3,\n    \"employer\": \"АО \\\"ФОРУМ. ВЫ\\\"\",\n    \"employerPhone\": \"+7 (342) 342-43-24\",\n    \"experience\": 4,\n    \"familyCount\": 3,\n    \"maritalStatus\": 2,\n    \"noWork\": false,\n    \"position\": \"манагер\",\n    \"salaryDate\": 10,\n    \"salaryOfficial\": 3\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fillStep3b",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.fillStep3b\",\n    \"params\": {\n    \"addressRegistration\": {\"locality\": \"г Астрахань\", \"street\": \"ул Павелецкая\", \"house\": \"4\", \"flat\": \"244\"},\n    \"addressRegistrationDadata\": {},\n    \"agreements\": {\"analog_of_the_autographic_signature_agreement\": true, \"giveUpClaimRights\": true,\n\"personalInfo\": true, \"privilege_2\": true},\n    \"issueAuthority\": \"ООО гыгыгы\",\n    \"issueDate\": \"12.12.2020\",\n    \"passport\": \"3240400420\",\n    \"passportScan\": \"\",\n    \"placeOfBirth\": \"Москва\",\n    \"subCode\": \"314234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStepsData",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.getStepsData\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDocumentUrl",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"application.getDocumentUrl\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "getUserState",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.getUserState\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "newLogin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"bearerToken\", pm.response.json().result.token);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.newLogin\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\",\n        \"password\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendSmsCodeForPTA",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.sendSmsCodeForPTA\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUserByPhone",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"bearerToken\", pm.response.json().result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.registerUserByPhone\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationSms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.sendConfirmationSms\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setUserPassword",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"bearerToken\", pm.response.json().result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.setUserPassword\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\",\n        \"password\": \"1234\",\n        \"passwordConfirmation\": \"1234\",\n        \"confirmationCode\": \"1234\",\n        \"passport\": \"{{passport}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkPassport",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.checkPassport\",\n    \"params\": {\n        \"passport\": \"{{passport}}\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"bearerToken\", pm.response.json().result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"auth.registerUser\",\n    \"params\": {\n        \"phone\": \"{{phoneNumber}}\",\n        \"password\": \"1234\",\n        \"passwordConfirmation\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validatePassport",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"auth.validatePassport\",\r\n    \"params\": {\r\n        \"phone\": \"{{phoneNumber}}\",\r\n        \"passport\": \"{{passport}}\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brokerage",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"brokerage.get\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"brokerage.sendConfirmationCode\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"brokerage.confirmSmsCode\",\n    \"params\": {\n        \"confirmationCode\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPaymentInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"brokerage.getPaymentInfo\",\n    \"params\": {\n        \"loanId\": {{loanId}},\n        \"serviceType\": 1,\n        \"email\": \"kfc@chicken.ru\",\n        \"mobilePhone\": \"{{phoneNumber}}\",\n        \"paymentMethod\": \"bank_card\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Calculator",
+			"item": [
+				{
+					"name": "getCounters",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"calculator.getCounters\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCalculationTariffs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"calculator.getCalculationTariffs\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "getProfile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getProfile\"\n    \n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDashboardInfo",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"loanId\", pm.response.json().result.id);\r",
+									"pm.environment.set(\"amount\", pm.response.json().result.amount);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getDashboardInfo\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCreditCards",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getCreditCards\",\n    \"params\": {\n        \"source\": \"ver3\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setAbandonedState",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.setAbandonedState\",\n    \"params\": {\n        \"status\": 1,\n        \"firstName\": \"\",\n        \"lastName\": \"\",\n        \"patronymic\": \"\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getQuestions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getQuestions\",\n    \"params\": {\n        \"type\": 1\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "answerQuestion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.answerQuestion\",\n    \"params\": {\n        \"interviewId\": 3,\n        \"questionId\": 10,\n        \"answerId\": 43\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isServiceRefusalAvailable",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.isServiceRefusalAvailable\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEvents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"client.getEvents\",\r\n    \"params\": {\r\n        \"type\": 1,\r\n        \"page\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCurrentLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getCurrentLoan\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "prepareBindingCreditCard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.prepareBindingCreditCard\",\n    \"params\": {\n        \"source\": \"string|ver2|optional\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.changePassword\",\n    \"params\": {\n    \"currentPassword\": \"1234\",\n    \"newPassword\": \"1111\"\n    }    \n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePhoto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.updatePhoto\",\n    \"params\": {\n    \"photo\":\"\"data:image/jpeg;base64,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\"\"\n    }    \n    \n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPromos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.getPromos\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addPromo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.addPromo\",\n    \"params\": {\n    \"number\": \"1\"\n    }    \n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"client.update\",\n    \"params\": { \n    \"data\": { \n        \"firstName\": \"Вапв\", \n        \"lastName\": \"Паав\", \n        \"patronymic\": \"Риев\", \n        \"birthDate\": \"03.01.2000\", \n        \"email\": \"vdf@fef.efe\", \n        \"passport\": \"4234925005\", \n        \"subCode\": \"562314\", \n        \"issueDate\": \"12.12.2020\", \n        \"placeOfBirth\": \"fdvd\", \n        \"issueAuthority\": \"fvdfv\", \n        \"addressRegistration\": { \"locality\": \"fvd\", \"street\": \"rf\", \"house\": \"44\", \"flat\": \"sedf\" } \n        } \n        }\n    }"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreditHoliday",
+			"item": [
+				{
+					"name": "getCalculationParams",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"creditHoliday.getCalculationParams\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "getNext Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"company.getNext\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Email",
+			"item": [
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"email.update\",\n    \"params\": {\n        \"newEmail\": \"gleb@gleb.ru\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "getRestructureConditions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"document.getRestructureConditions\",\n    \"params\": {\n        \"paymentsCount\": 6\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "landing",
+			"item": [
+				{
+					"name": "sendComplaint",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"landing.sendComplaint\",\n    \"params\": {\n        \"phone\": \"+7 (952) 451-34-24\",\n        \"email\": \"njknjk@efef.efe\",\n        \"name\": \"ам амв аив\",\n        \"subjectId\": 2,\n        \"message\": \"gbvgdfbdf\",\n        \"files\": []\n}\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendFeedback",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"landing.sendFeedback\",\n    \"params\": {\n        \"name\": \"ааа\",\n        \"gCaptcha\": \"03AGdBq24JunxSfvOqTcmb_L2dfU221Erm2GqQCV3As7nN_G0wLOkYoy7YRlznyNmafWGjm3RzfwKzelmfnLJTfM5pvxlxwqlqz9Dw7MPEfFx0kSskNB0cTXH-HfI1AF4rEzSVw8JJ2FDFDEwtMJA0bMosSOpiayI-y1QO8q759jRlbLQpv54-BV1VdAEmQzEyAM6bdo34ruNbxJjxIwm3Rf0Mcp1_fjyUlgN7g6gWWfAmDmxSp2-cThrSOxGjgIl2HcF7x1zsmPJhcp5QUH8V5BbcEnRnGtMArBwUIMXyRXUYzgXXtgTMbF_k1jrTln5Ut9Vq5_dlV-hmH9ILXl98lCMz-T0uYgNfC_TQ2p58yo759sNK3bPkAqPQK-CmR1bZ23Ce8b0Cxy9MWibABKDLPmRW0XhNWCEmK30ktoZogpMs_wZTpNVTSrx4vvL8sHDxNTBGFjUoCbTUBR5WWn3enoiTAC9dcRvbbw\",\n        \"email\": \"nknk@fef.ef\",\n        \"phone\": \"+7 (942) 525-24-24\",\n        \"message\": \"акыуаыуа вапви\"\n}\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Loan",
+			"item": [
+				{
+					"name": "getAgreements",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getAgreements\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLoanOrder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getLoanOrder\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSelectedLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.getSelectedLoan\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 4,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"loan.deleteLoan\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "downgrade",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.downgrade\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.payout\",\n    \"params\": {\n        \"creditCardId\": 26327,\n        \"source\": \"ver3\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "utmByLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.utmByLoan\",\n    \"params\": {\n        \"loanId\": 211126\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createSelectedLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.createSelectedLoan\",\n    \"params\": {\n        \"period\": 7,\n        \"amount\": 200000,\n        \"tariffId\": 1\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createBySelectedLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.createBySelectedLoan\",\n    \"params\": {\n        \"offset\": -180,\n        \"confirmationCode\": \"1234\",\n        \"agreements\": {\n        \"analog_of_the_autographic_signature_agreement\": true,\n        \"giveUpClaimRights\":true,\n        \"personalInfo\": true,\n        \"privilege_2\": true\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationSms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.sendConfirmationSms\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.sign\",\n    \"params\": {\n        \"confirmationCode\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"loan.sendConfirmationCode\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Internal",
+			"item": []
+		},
+		{
+			"name": "Passport",
+			"item": [
+				{
+					"name": "getIssueAuthority",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"passport.getIssueAuthority\",\n    \"params\": {\n        \"subCode\": \"780075\",\n        \"issueDate\": \"03.03.2018\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PaidService",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"paidService.get\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 4,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"paidService.getInfo\",\n  \"params\": {\n    \"paidServices\": [\n      {\n        \"type\": 4\n      }\n    ]\n  }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 6,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"paidService.sendConfirmationCode\",\n  \"params\": {}\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmSmsCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 7,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"paidService.confirmSmsCode\",\n  \"params\": {\n    \"smsCode\": \"1234\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPaymentInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 29,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"paidService.getPaymentInfo\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recalculation",
+			"item": [
+				{
+					"name": "calculateRestructuring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"recalculation.calculateRestructuring\",\n    \"params\": {\n        \"paymentsCount\": 6\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRestructuringInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 6,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"recalculation.getRestructuringInfo\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requestRestructuring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 9,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"recalculation.requestRestructuring\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmRestructuring",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 10,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"recalculation.confirmRestructuring\",\n  \"params\": {\n    \"smsCode\": \"1234\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "getAvailableList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getAvailableList\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getActiveList",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getActiveList\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAgreement",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getAgreement\",\n    \"params\": {\"subscriptionId\": 158}\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.sendConfirmationCode\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.confirmCode\",\n    \"params\": {\n        \"confirmationCode\": \"1234\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPaymentUrl",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"subscription.getPaymentUrl\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Refusal",
+			"item": [
+				{
+					"name": "loanRefuseServices.unlockRefusal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"id\": 1,\r\n    \"method\": \"loanRefuseServices.unlockRefusal\",\r\n    \"params\": {\r\n        \"clientId\": 448996,\r\n        \"username\": \"username\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dozarplati-test-api.devim.team/rpc_admin",
+							"protocol": "https",
+							"host": [
+								"dozarplati-test-api",
+								"devim",
+								"team"
+							],
+							"path": [
+								"rpc_admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loan.refuseServices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"loan.refuseServices\",\r\n    \"params\": {\r\n         \"loanNumber\":\"67-25775\",\r\n        \"lastName\": \"Тимофеева\",\r\n        \"firstName\": \"Авто-Тамара\",\r\n        \"patronymic\": \"рпрпрп\",\r\n        \"birthDate\": \"01.01.1990\",\r\n        \"passport\": \"2484427208\",\r\n        \"subCode\": \"789077\",\r\n        \"passportIssueDate\": \"01.01.2020\",\r\n        \"passportIssuedBy\": \"прпрпрпрпрп\",\r\n        \"city\": \"Москв\",\r\n        \"street\": \"Пррр\",\r\n        \"house\": \"32\",\r\n        \"apartment\": \"2\",\r\n        \"bankName\": \"ПППП\",\r\n        \"bik\": \"456567687\",\r\n        \"bankAccount\": \"40817810000000000000\",\r\n        \"application\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9Q\",\r\n        \"refuseDate\": \"2022-05-30\",\r\n        \"email\": \"sdf@dfg.fgh\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://dozarplati-test-api.devim.team/rpc",
+							"protocol": "https",
+							"host": [
+								"dozarplati-test-api",
+								"devim",
+								"team"
+							],
+							"path": [
+								"rpc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Esia",
+			"item": [
+				{
+					"name": "init",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"esia.init\",\n    \"params\": []\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Push",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 2,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"push.register\",\n  \"params\": {\n    \"deviceId\": \"d-I4e_GEMAQ:APA91bGKZYQHFk_JRlmXxlzutvhiMTjXIkUTGrWDWOXOEOiATaQJ1g9sWMCUob5qDjDoRT7jQ-fbEj-0mZWkjYbRWr0r9Y6S9rpysAPO2zn6yIjgbESgQrEZ8mcPtFUQtfA5kDx8QWUY\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "promoCode",
+			"item": [
+				{
+					"name": "addToSelectedLoan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"promoCode.addToSelectedLoan\",\n    \"params\": {\n  \"promoCode\": \"грг\"\n}\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "legalSupport",
+			"item": [
+				{
+					"name": "getDocument",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 15,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"legalSupport.getDocument\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendConfirmationCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 21,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"legalSupport.sendConfirmationCode\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "confirmSmsCode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 26,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"legalSupport.confirmSmsCode\",\n  \"params\": {\n    \"smsCode\": \"1234\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPaymentInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{bearerToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 29,\n  \"jsonrpc\": \"2.0\",\n  \"method\": \"legalSupport.getPaymentInfo\"\n}"
+						},
+						"url": {
+							"raw": "{{rpcUrl}}",
+							"host": [
+								"{{rpcUrl}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
 }
